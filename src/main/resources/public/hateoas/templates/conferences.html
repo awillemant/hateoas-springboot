@@ -1,0 +1,36 @@
+<div class="row">
+
+	<div class="col-md-12 main">
+
+		<table class="table table-bordered table-striped">
+			<tr>
+				<th class="nom t-first">Nom</th>
+				<th class="start">Début</th>
+				<th class="end">Fin</th>
+				<th class="talks">Talks</th>
+				<th class="actions t-last"></th>
+			</tr>
+			<tr ng-repeat="current in conferences">
+				<td><strong>{{current.name}}</strong></td>
+				<td>{{current.startDate }}</td>
+				<td>{{current.endDate }}</td>
+				<td>
+					<ul>
+						<li ng-repeat="currentTalk in current.talks">{{currentTalk.title}}	<small>({{currentTalk.speakerName}})</small></li>
+						<li>...</li>
+					</ul>
+				</td>
+				<td>
+					<button type="button" class="btn btn-primary" ng-hide="current.past" ><i class="fa fa-ticket"></i> inscription</button>
+				</td>
+			</tr>
+
+		</table>
+
+
+	</div>
+
+</div>
+
+
+
