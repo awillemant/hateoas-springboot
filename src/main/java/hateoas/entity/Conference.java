@@ -18,7 +18,7 @@ public class Conference {
 
     private LocalDate endDate;
 
-    @OneToMany(mappedBy = "conference",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "conference", cascade = CascadeType.ALL)
     private List<Talk> talks;
 
     public Conference() {
@@ -36,7 +36,6 @@ public class Conference {
     public long getId() {
         return id;
     }
-
 
     public String getName() {
         return name;
