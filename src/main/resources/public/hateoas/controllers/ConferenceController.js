@@ -5,12 +5,10 @@ define([ 'modules/hateoasModule',  'resources/Conference'  ], function(hateoasMo
 		$scope.conferences = [];
 
 		var refreshConferences = function() {
-			$log.debug("Rafraichissement de la liste des conferences");
 			var futureConferences = Conference.get().$promise;
 			futureConferences.then(function(data) {
 				$scope.conferences = data._embedded.conferences;
-				parseTalks()
-				$log.debug($scope.conferences);
+				parseTalks();
 			});
 		};
 		
