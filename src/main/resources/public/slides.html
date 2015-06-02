@@ -105,8 +105,8 @@
         </section>
 
         <section>
-            <h2>...ATEOAS</h2>
-            <h4>State of the application? WTF?</h4>
+            <h1>...ATEOAS</h1>
+            <h4 style="color:#e7ad52">State of the application? WTF?</h4>
             <ul>
                 <li class="fragment" data-fragment-index="0">HTTP Session</li>
                 <li class="fragment" data-fragment-index="1">User rights</li>
@@ -119,52 +119,79 @@
         </section>
 
         <section >
-            <h2>Links</h2>
-            <ul>
-                <li>Just a simple <em>name - URL</em> association</li>
-                <li>1 link = 1 available action</li>
-                <li>No link, no action</li>
-            </ul>
+            <h1>Links</h1>
+            <p class="fragment">Name + URL</p>
+            <p class="fragment"><i class="fa fa-check"></i> 1 link = 1 available action</p>
+            <p class="fragment"><i class="fa fa-close"></i> No link, no action</p>
+
 
         </section>
 
+
+        <section >
+            <h1>Richardson's maturity model</h1>
+        </section>
         <section>
-            <section >
-                <h2>Richardson's maturity model</h2>
-            </section>
-            <section>
-                <h2 style="font-size: 112px;">Level 0</h2>
-                <p>only one URL</p>
-                <p>everything inside content (XML envelop for example)</p>
-            </section>
-            <section>
-                <h2 style="font-size: 112px;">Level 1</h2>
-                <p>several URLs</p>
-                <p>content depending on the URL</p>
-            </section>
+            <h1>Level 0</h1>
+            <p>only one URL</p>
+            <p>everything inside content (XML envelop for example)</p>
+            <p><em class="fragment" style="color:#e7ad52">Yes SOAP, we are looking at you...</em></p>
+        </section>
+        <section>
+            <h2 style="font-size: 112px;">Level 1</h2>
+            <p>several URLs</p>
+            <p>content depending on the URL</p>
+            <p>one resource per URL</p>
+            <p><em class="fragment" style="color:#e7ad52">It's like browsing the web no?</em></p>
+        </section>
+        <section>
             <section>
                 <h2 style="font-size: 112px;">Level 2</h2>
                 <p>several URLs</p>
                 <p>HTTP verbs</p>
                 <p>HTTP status codes</p>
             </section>
-            <section >
-                <h2 style="font-size: 112px;">Level 3</h2>
-                <p>HATEOAS</p>
+            <section>
+                <h1>HTTP Verbs</h1>
+                <ul>
+                    <li class="fragment"><span style="color:#e7ad52">GET</span> : Read a resource</li>
+                    <li class="fragment"><span style="color:#e7ad52">POST</span> : Create a resource</li>
+                    <li class="fragment"><span style="color:#e7ad52">PUT</span> : Modify a resource</li>
+                    <li class="fragment"><span style="color:#e7ad52">DELETE</span> : Delete a resource</li>
+                </ul>
+            </section>
+            <section>
+                <h1>What about the NULL property issue?</h1>
+            </section>
+            <section>
+                <h1>HTTP Verbs</h1>
+                <ul>
+                    <li class="fragment fade-out" data-fragment-index="0"><span style="color:#e7ad52">GET</span> : Read a resource</li>
+                    <li class="fragment fade-out" data-fragment-index="0"><span style="color:#e7ad52">POST</span> : Create a resource</li>
+                    <li ><span style="color:#e7ad52">PUT</span> : <strong>Replacing</strong> a resource</li>
+                    <li class="fragment fade-out" data-fragment-index="0"><span style="color:#e7ad52">DELETE</span> : Delete a resource</li>
+                    <li class="fragment" data-fragment-index="1"><span style="color:#e7ad52">PATCH</span> : <strong>Updating parts</strong> of a resource</li>
+                </ul>
             </section>
         </section>
-
         <section >
-            <h2>Before playing with HATEOAS...</h2>
-            <div class="absolute-element" style="font-size: 54px; position: absolute; width: 557px; height: 114px; z-index: 4; left: 40px; top: 200px; max-height: none; max-width: none;">
-                Every HTTP verb should be handled for each URL!
-            </div>
-            <div class="absolute-element" style="font-size: 54px; position: absolute; width: 513px; height: 113px; z-index: 4; left: 417px; top: 481px; max-height: none; max-width: none;">
-                Relevant HTTP status codes should be returned!
-            </div>
+            <h2 style="font-size: 112px;">Level 3</h2>
+            <p>HATEOAS</p>
         </section>
 
-        <section class="stack" >
+
+        <section >
+            <section>
+                <h1>Before playing with HATEOAS...</h1>
+            </section>
+            <section>
+                <h2>Rule #1</h2>
+                <p><strong style="color:#e7ad52">Every HTTP verb should be handled for each URL!</strong></p>
+            </section>
+            <section>
+                <h2>Rule #1'</h2>
+                <p><strong style="color:#e7ad52">Relevant HTTP status codes should be returned!</strong></p>
+            </section>
             <section >
                 <h2>Quizz</h2>
             </section>
@@ -200,7 +227,10 @@
                 <h2 style="font-size: 200px;">418</h2>
                 <p style="color:#e7ad52;" class="fragment" data-fragment-index="0">I'm a teapot</p>
             </section>
+
         </section>
+
+
 
         <section >
             <h2>Demo</h2>
