@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>HAETOAS</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="webjars/reveal.js/3.0.0/css/reveal.css">
+    <link rel="stylesheet" href="webjars/reveal.js/3.0.0/css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="webjars/font-awesome/4.3.0/css/font-awesome.min.css" > n
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="webjars/reveal.js/3.0.0/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'webjars/reveal.js/3.0.0/css/print/pdf.css' : 'webjars/reveal.js/3.0.0/css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>HATEOAS</h1>
+            <h4>How to rest like a pro...</h4>
+
+        </section>
+
+        <section>
+            <p><img src="img/awt.png" /></p>
+            <p><em>@awillemant</em></p>
+            <p><a href="https://github.com/awillemant">https://github.com/awillemant</a></p>
+        </section>
+
+        <section>
+            <h2>HATEOAS</h2>
+            <img src="img/dieu_grec.png" style="width:700px"/>
+        </section>
+
+        <section>
+            <div class="visible absolute-element" data-fragment-index="0" style="position: absolute; width: 63px; height: 581px; z-index: 4; left: 308px; top: 25px; ">
+                <h2 style="color:#e7ad52;">H</h2>
+                <h2 style="color:#e7ad52;">A</h2>
+                <h2 style="color:#e7ad52;">T</h2>
+                <h2 style="color:#e7ad52;">E</h2>
+                <h2 style="color:#e7ad52;">O</h2>
+                <h2 style="color:#e7ad52;">A</h2>
+                <h2 style="color:#e7ad52;">S</h2>
+            </div>
+            <div class="visible absolute-element" style="position: absolute; text-align:left; width: 500px; height: 581px; z-index: 4; left: 375px; top: 25px;">
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="0">ypermedia</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">s</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">he</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">ngine</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">f</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">pplication</h2>
+                <h2 style="font-weight:normal" class="fragment" data-fragment-index="1">tate</h2>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hyperme-what ?</h2>
+            <blockquote style="position: absolute; width: 386px; height: 153px; z-index: 4; left: 32px; top: 119px; max-height: none; max-width: none;" class="absolute-element fragment" data-fragment-index="0">
+                <strong>Hypermarket</strong>, just a supermarker, with more shelves
+            </blockquote>
+            <blockquote style="max-height: none; max-width: none; position: absolute; width: 389px; height: 152px; z-index: 4; left: 522px; top: 191px;" class="absolute-element fragment" data-fragment-index="1">
+                <strong>Hypercube</strong>, just a cube, with more dimensions
+            </blockquote>
+            <blockquote style="max-height: none; max-width: none; position: absolute; width: 355px; height: 144px; z-index: 4; left: 108px; top: 321px;" class="absolute-element fragment" data-fragment-index="2">
+                <strong>Hypertext</strong>, just a text, with links
+            </blockquote>
+            <blockquote style="font-size: 42px; max-height: none; max-width: none; position: absolute; width: 687px; height: 112px; z-index: 4; left: 136px; top: 518px;" class="absolute-element fragment" data-fragment-index="3">
+                <strong>Hypermedia</strong>, just a resource, with links : That's it!
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>...ATEOAS</h2>
+            <h4>State of the application? WTF?</h4>
+            <ul>
+                <li class="fragment" data-fragment-index="0">HTTP Session</li>
+                <li class="fragment" data-fragment-index="1">User rights</li>
+                <li class="fragment" data-fragment-index="2">Time</li>
+                <li class="fragment" data-fragment-index="3">State of business entities</li>
+                <li class="fragment" data-fragment-index="4">Location</li>
+                <li class="fragment" data-fragment-index="4">...</li>
+            </ul>
+
+        </section>
+
+        <section >
+            <h2>Links</h2>
+            <ul>
+                <li>Just a simple <em>name - URL</em> association</li>
+                <li>1 link = 1 available action</li>
+                <li>No link, no action</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <section >
+                <h2>Richardson's maturity model</h2>
+            </section>
+            <section>
+                <h2 style="font-size: 112px;">Level 0</h2>
+                <p>only one URL</p>
+                <p>everything inside content (XML envelop for example)</p>
+            </section>
+            <section>
+                <h2 style="font-size: 112px;">Level 1</h2>
+                <p>several URLs</p>
+                <p>content depending on the URL</p>
+            </section>
+            <section>
+                <h2 style="font-size: 112px;">Level 2</h2>
+                <p>several URLs</p>
+                <p>HTTP verbs</p>
+                <p>HTTP status codes</p>
+            </section>
+            <section >
+                <h2 style="font-size: 112px;">Level 3</h2>
+                <p>HATEOAS</p>
+            </section>
+        </section>
+
+        <section >
+            <h2>Before playing with HATEOAS...</h2>
+            <div class="absolute-element" style="font-size: 54px; position: absolute; width: 557px; height: 114px; z-index: 4; left: 40px; top: 200px; max-height: none; max-width: none;">
+                Every HTTP verb should be handled for each URL!
+            </div>
+            <div class="absolute-element" style="font-size: 54px; position: absolute; width: 513px; height: 113px; z-index: 4; left: 417px; top: 481px; max-height: none; max-width: none;">
+                Relevant HTTP status codes should be returned!
+            </div>
+        </section>
+
+        <section class="stack" >
+            <section >
+                <h2>Quizz</h2>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">404</h2>
+                <p class="fragment" data-fragment-index="0">not found</p>
+            </section>
+            <section>
+                <h2 style="font-size: 200px;">501</h2>
+                <p class="fragment" data-fragment-index="0">not implemented</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">201</h2>
+                <p class="fragment" data-fragment-index="0">created</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">200</h2>
+                <p class="fragment" data-fragment-index="0">ok</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">401</h2>
+                <p class="fragment" data-fragment-index="0">unauthorized</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">403</h2>
+                <p class="fragment" data-fragment-index="0">forbidden</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">301</h2>
+                <p class="fragment" data-fragment-index="0">moved permanently</p>
+            </section>
+            <section >
+                <h2 style="font-size: 200px;">418</h2>
+                <p class="fragment" data-fragment-index="0">I'm a teapot</p>
+            </section>
+        </section>
+
+        <section >
+            <h2>Demo</h2>
+            <img src="img/boring.jpg" />
+        </section>
+
+        <section >
+            <h2>A better API, ok, what's next?</h2>
+
+            <p class="fragment" data-fragment-index="0"><strong>Hypertext Application Language</strong></p>
+            <p class="fragment" data-fragment-index="0" style="color:#e7ad52; font-size:24px">http://stateless.co/hal_specification.html</p>
+            <p class="fragment" data-fragment-index="1"><strong>JSON API</strong></p>
+            <p class="fragment" data-fragment-index="1" style="color:#e7ad52; font-size:24px">http://jsonapi.org</p>
+            <p class="fragment" data-fragment-index="2"><strong>Ori Pekelman</strong></p>
+            <p class="fragment" data-fragment-index="2" style="color:#e7ad52; font-size:24px">http://youtu.be/ZZxOaCP8vyg</p>
+            <p class="fragment" data-fragment-index="3"><strong>Steve Klabnik</strong></p>
+        </section>
+
+        <section class="">
+            <h1>Thank you!</h1>
+            <p style="font-size: 24px;">@awillemant</p>
+            <p style="font-size: 24px;">https://github.com/awillemant</p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="webjars/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="webjars/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            { src: 'webjars/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'webjars/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'webjars/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'webjars/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'webjars/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+            { src: 'webjars/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
